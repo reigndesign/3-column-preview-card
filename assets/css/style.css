@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+.card--components {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  
+}
+
+/* Cards Background Color */
+.card--gold {
+  width: 100%;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card--cyan {
+  width: 100%;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card--green {
+  width: 100%;
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* Card Contents */
+.card--content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  padding: 40px;
+  
+}
+
+
+.card--text h1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  padding: 20px 0;
+}
+
+.card--text p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* Button */
+.btn--primary a {
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100px;
+  text-decoration: none;
+  color: hsl(31, 77%, 52%);
+  margin-top: 50px;
+}
+
+.btn--secondary a {
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100px;
+  text-decoration: none;
+  color: hsl(184, 100%, 22%);
+  margin-top: 50px;
+}
+
+.btn--third a {
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100px;
+  text-decoration: none;
+  color: hsl(179, 100%, 13%);
+  margin-top: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px;
+  }
+  .card--components {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+  }
+}
+
+@media (max-width: 375px) {
+  
+  .container {
+    padding: 20px;
+  }
+  .card--components {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+  }
+}
